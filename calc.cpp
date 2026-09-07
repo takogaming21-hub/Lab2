@@ -16,22 +16,21 @@ int main() {
     cin >> b;
 
     switch(op) {
-        case 1:
             case 1:
-    result = a + b;
-    break;
+        result = a + b;
+        break;
 
-        case 2:
-            // code
-            break;
+    case 2:
+        result = a - b;
+        break;
 
-        case 3:
-            // code
-            break;
+    case 3:
+        // code
+        break;
 
-        case 4:
-            // code
-            break;
+    case 4:
+        // code
+        break;
     }
 
     cout << "Результат = " << result;
