@@ -1,22 +1,23 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
 int main() {
     int a, b, op;
-    double result;
+    double result = 0;
 
     cout << "Введіть перше число\n";
     cin >> a;
 
-    cout << "Введіть оператор\n1\t+\n2\t-\n3\t*\n4\t/\n\n";
+    cout << "Введіть оператор\n1\t+\n2\t-\n3\t*\n4\t/\n5\t^\n\n";
     cin >> op;
 
     cout << "Введіть друге число\n";
     cin >> b;
 
     switch(op) {
-            case 1:
+    case 1:
         result = a + b;
         break;
 
@@ -25,13 +26,11 @@ int main() {
         break;
 
     case 3:
-        // code
+        result = a * b;
         break;
 
     case 4:
-        // code
-        break;
-    }
-
-    cout << "Результат = " << result;
-}
+        if (b != 0)
+            result = (double)a / b;
+        else
+            cout <<
